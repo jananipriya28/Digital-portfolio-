@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Jananipriya S</title>
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif; /* Modern serif font */
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Light pink background */
+            color: #4a148c; /* Dark purple text */
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #ba68c8; /* Medium purple header */
+            color: #fff;
+            padding: 4rem 3rem;
+            text-align: left;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            margin-left: 2rem;
+        }
+
+        .header-content h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px; /* Slightly rounded corners */
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: #e1bee7; /* Light purple navigation */
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #6a1b9a; /* Darker purple nav links */
+            font-weight: 600;
+            padding: 12px 18px;
+            border-radius: 25px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #9c27b0; /* Slightly lighter purple on hover */
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 4rem;
+            margin: 4rem auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            text-align: left;
+        }
+
+        .section-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            color: #ba68c8;
+            border-bottom: 3px solid #d1c4e9;
+            padding-bottom: 15px;
+        }
+
+        .download-button {
+            background-color: #9c27b0; /* Slightly lighter purple button */
+            color: #fff;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 3rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #ab47bc; /* Even lighter purple on hover */
+        }
+
+        footer {
+            background-color: #e1bee7;
+            color: #6a1b9a;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 5rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+        #resume .section-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-content {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .header-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .section-content {
+                padding: 3rem;
+                margin: 3rem 1rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="jan.jpg" alt="Your Profile Picture" class="profile-picture">
+        <div class="header-content">
+            <h1>Jananipriya S</h1>
+            <p>I Am STUDENT</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>A passionate and dedicated second-year Computer Science student with a strong interest in programming, software development, and problem-solving. Eager to apply my academic knowledge in real-world projects and gain hands-on experience. A quick learner with excellent analytical and teamwork skills, looking for opportunities to grow in the tech industry.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Valliammal College For Women affiliated to University of Madras- B.Sc.Computer Science</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>MS-WORD</li>
+                <li>MS-EXCEL</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="resume.pdf" target="_blank" class="download-button">Download CV</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jananipriya S</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
